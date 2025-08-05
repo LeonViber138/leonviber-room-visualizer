@@ -17,35 +17,6 @@
 
 ---
 
-## 📂 Project Structure
-
-leonviber-room-visualizer/
-├── Phase_1_DXF_to_3D_Model/
-│ ├── CoffeeTable.dxf
-│ ├── parse_dxf_to_json.py
-│ ├── build_3d_model_from_dxf.py
-│ ├── parsed_geometry.json
-│ └── coffee_table.glb
-│
-├── Phase_2_Furniture_Placement/
-│ ├── add_furniture_to_model.py
-│ ├── room_with_furniture.glb
-│ └── (reuses Phase 1 geometry files)
-│
-├── Phase_3_Panorama_Rendering/
-│ ├── generate_empty_room.py
-│ ├── generate_basic_furniture_room.py
-│ ├── generate_panorama.py
-│ ├── outputs/
-│ │ └── panorama_from_center.png
-│ └── resources/
-│ ├── empty_room.glb
-│ └── furnished_room.glb
-│
-├── requirements.txt
-
----
-
 ## 🚀 How It Works
 
 1. **Phase 1 – DXF Parsing and 3D Generation**
@@ -76,3 +47,12 @@ Make sure you have **Python 3.10+** installed. Then run:
 ```bash
 pip install -r requirements.txt
 
+▶️ Running the Project
+Phase 1 – Generate 3D Model from DXF
+python Phase_1_DXF_to_3D_Model/build_3d_model_from_dxf.py
+
+Phase 2 – Add Furniture
+python Phase_2_Furniture_Placement/add_furniture_to_model.py
+
+Phase 3 – Generate Panorama
+python Phase_3_Panorama_Rendering/generate_panorama.py
