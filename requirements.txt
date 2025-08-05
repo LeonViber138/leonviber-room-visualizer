@@ -1,0 +1,5 @@
+numpy==2.3.0
+trimesh==4.4.0
+pyrender==0.1.45
+py360convert==1.0.4
+opencv-python==4.10.0.82
